@@ -36,9 +36,9 @@ for filterid in filters:
             output = os.path.join(
             '..',
             'DVV', 
-            "%02i" % filterid, 
-            f"%03i_DAYS" % mov_stack,
-            components)
+            filterid, 
+            mov_stack,
+            component)
 
             df_out = pd.DataFrame(
                             {'dvv_M': dvv_M_lst, 'dvv_M0': dvv_M0_lst},
