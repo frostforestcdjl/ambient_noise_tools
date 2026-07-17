@@ -45,4 +45,4 @@ for filterid in filters:
                             index=Dates)
             
             os.makedirs(output, exist_ok=True)
-            df_out.to_csv(os.path.join(output, f'{pair_lst[0]}.txt'))
+            df_out.to_csv(os.path.join(output, f'{pair_lst[0]}.txt'), index_label='Date')
